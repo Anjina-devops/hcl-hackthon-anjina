@@ -31,8 +31,10 @@ variable "public_subnet_cidr" {
 }
 
 variable "public_subnet_names" {
-    default = []
-    type    = list(string)
+    default = ["public-subnet-anjina-1", "public-subnet-anjina-2"]
+    type = list(string)
+
+
 
 }
 
@@ -50,11 +52,12 @@ variable "private_subnet_cidr" {
 }
 
 variable "private_subnet_names" {
-    default = []
+    default = ["private-subnet-anjina-1", "private-subnet-anjina-2"]
 
 }
 
 variable "public_route_table_tags" {
+    
   default = {}
 }
 

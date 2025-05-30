@@ -25,10 +25,14 @@ variable "igw_tags" {
 }
 
 variable "public_subnet_cidr" {
+    type = list(string)
+    default = ["10.0.10.0/24", "10.0.10.1/24"]
 
 }
 
 variable "public_subnet_names" {
+    default = []
+    type    = list(string)
 
 }
 
@@ -39,10 +43,14 @@ variable "azs" {
 }
 
 variable "private_subnet_cidr" {
+    type = list(string)
+    default = ["10.0.20.0/24", "10.0.21.1/24"]
+
 
 }
 
 variable "private_subnet_names" {
+    default = []
 
 }
 

@@ -12,12 +12,12 @@ variable "enable_dns_support" {
 
 variable "common_tags" {
   default = {} # this means tags is optional
-  type = map
+  type    = map(any)
 }
 
 variable "vpc_tags" {
   default = {} # this means tags is optional
-  type = map
+  type    = map(any)
 }
 
 variable "igw_tags" {
@@ -25,23 +25,23 @@ variable "igw_tags" {
 }
 
 variable "public_subnet_cidr" {
-  
+
 }
 
 variable "public_subnet_names" {
-  
+
 }
 
 variable "azs" {
-  
+
 }
 
 variable "private_subnet_cidr" {
-  
+
 }
 
 variable "private_subnet_names" {
-  
+
 }
 
 variable "public_route_table_tags" {
@@ -49,7 +49,7 @@ variable "public_route_table_tags" {
 }
 
 variable "private_route_table_tags" {
-  
+
 }
 
 

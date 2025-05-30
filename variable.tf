@@ -1,5 +1,5 @@
 variable "cidr_block" {
-  #default = "10.0.0.0/0"
+  default = "10.0.0.0/0"
 }
 
 variable "enable_dns_hostnames" {
@@ -33,6 +33,8 @@ variable "public_subnet_names" {
 }
 
 variable "azs" {
+    type = list(string)
+    default = ["us-east-1a", "us-east-1b"]    
 
 }
 

@@ -51,6 +51,7 @@ variable "public_route_table_tags" {
 }
 
 variable "private_route_table_tags" {
+    default = {}
 
 }
 

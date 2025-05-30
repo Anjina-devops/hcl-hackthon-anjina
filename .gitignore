@@ -1,0 +1,7 @@
+.terraform
+.terraform.lock.hcl
+*.pem
+terraform.*
+.DS_Store
+Hashicorp
+
